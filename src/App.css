@@ -1,35 +1,31 @@
-/* styles.css */
-.app {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-}
-
-input {
-  margin-bottom: 20px;
-  padding: 10px;
-}
-
-.country-grid {
+/* App.css */
+.countryContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.country-card {
-  width: 200px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
+.countryCard {
   margin: 10px;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
+  flex: 0 0 calc(14.28% - 20px);
+  /* Adjust the width as needed for 7 boxes in a row */
+  max-width: calc(14.28% - 20px);
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  /* Solid border style */
 }
 
-img {
+.countryFlag {
   width: 100px;
-  height: 100px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Center the search bar */
+input[type="text"] {
+  display: block;
+  margin: 20px auto;
+  padding: 8px;
 }
